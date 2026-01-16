@@ -74,6 +74,6 @@ The model generated **36 association rules**. For the actual execution, we shoul
 
 ---
 
-## Notes / Limitations:
+## Limitations:
 - This dataset is scoped to a defined list of items, which is useful for learning and controlled insight generation, but it limits category breadth.
 - Results should be validated with a simple A/B test in stores (or in loyalty data) to confirm incremental uplift from bundles.
