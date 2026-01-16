@@ -71,3 +71,9 @@ The model generated **36 association rules**. For the actual execution, we shoul
 - **Mechanic:** “Add 1 more item for a small discount” or “Buy 2, save on the 3rd.”  
 - **Why it works:** Higher support (~3.98%) gives commercial scale, and the offer is easy to execute for easy-to-add items. This is suitable for a low-friction upsell mechanic.   
 - **Placement:** Checkout lanes or high-traffic impulse zones where the add-ons perform well.
+
+---
+
+## Notes / Limitations:
+- This dataset is scoped to a defined list of items, which is useful for learning and controlled insight generation, but it limits category breadth.
+- Results should be validated with a simple A/B test in stores (or in loyalty data) to confirm incremental uplift from bundles.
