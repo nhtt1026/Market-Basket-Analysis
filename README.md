@@ -28,23 +28,26 @@ I used association rule mining in SAS Enterprise Miner to generate rules and eva
 
 ## Key results:
 ### Overall output
-The model generated **36 valid association rules** from the transaction dataset. 
-
-### Strongest association (Maximum lift):
+The association analysis produced **36 rules**. Three patterns stand out as the most actionable:
 
 <img width="2534" height="1182" alt="image" src="https://github.com/user-attachments/assets/ecad6cb8-03f5-491b-9a9b-f3c748ae9d90" />
 
-- **Maximum Lift:** **3.60**   
-- This maximum Lift is achieved by 2 reciprocal rules:  
-  - Perfume → Toothbrush (Lift 3.60; Support 2.18%; Transaction Count 4,364)   
-  - Toothbrush → Perfume (Lift 3.60; Support 2.18%; Transaction Count 4,364)   
+### 1) Toothbrush ⇄ Perfume (Strongest Pair):
+- **Max Lift:** **3.60** (highest)  
+- **Support:** 2.18% (4,364 baskets)  
+- **Confidence:** 32.40% (Toothbrush → Perfume), 24.26% (Perfume → Toothbrush)  
+- These two items appear together far more often than expected, making them the clearest “buy-together” opportunity.
 
-**Key Takeaway**:
-- Because Support and Transaction Count are identical, these 2 rules are 2 directional views of the same co-occurrence pattern.
-- The confidence differs by direction:
-  - When a customer buys Perfume, ~24% of the time they also buy a Toothbrush in the same basket.
-  - When a customer buys a Toothbrush, ~32% of the time they also buy Perfume in the same basket.
-- This difference is normal because one product is purchased more often overall, so starting from one side can make the “add-on” rate look higher
+### 2) Greeting Cards → (Magazine & Candy Bar):
+- **Lift:** 2.68  
+- **Support:** 1.67%  
+- **Confidence:** 45.86%  
+- Greeting card purchases frequently come with a "small treat & read” add-on pattern.
 
+### 3) Pencils → Greeting Cards:
+- **Lift:** 1.48  
+- **Support:** 2.92%  
+- **Confidence:** 21.67%  
+- A practical, repeatable stationery link that occurs often enough to promote.
 
 
