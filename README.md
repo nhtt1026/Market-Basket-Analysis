@@ -12,7 +12,10 @@ Retail promotions work best when they reflect real customer shopping behaviour. 
 ## Data:
 **Dataset:** Transactional basket data (1 row = 1 item in 1 transaction). 
 
-**Core fields and roles**
+**Core fields and roles:**
+
+<img width="2098" height="1102" alt="image" src="https://github.com/user-attachments/assets/b8d2001e-48cd-4907-aff4-939287ca4548" />
+
 - `PurchaseId` (ID): transaction identifier   
 - `Item` (Target): product purchased   
 - `Outlet` (Rejected): store identifier (not used in modeling)   
@@ -21,6 +24,9 @@ Retail promotions work best when they reflect real customer shopping behaviour. 
 Products include a defined set across both departments (e.g., toothbrushes, toothpaste, perfume, greeting cards, pens, pencils, magazines, etc.). 
 
 ## Method (Association rule mining):
+
+<img width="1162" height="340" alt="image" src="https://github.com/user-attachments/assets/f17fdd0f-883d-4736-8841-3813dfdd5f2f" />
+
 I used association rule mining in SAS Enterprise Miner to generate rules and evaluate them using 3 standard metrics:   
 - **Support:** How often items appear together  
 - **Confidence:** How often the consequent appears when the antecedent appears, used to measure the reliability (If X, then Y)
